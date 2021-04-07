@@ -14,7 +14,6 @@ export default function (oldVnode, newVnode) {
         patcnVnode(oldVnode, newVnode)
     } else {
         console.log('不是同一个节点, 插入新的, 删除旧的');
-
         let newVnodeElm = createElement(newVnode)
         // 插入到老节点之前
         if (oldVnode.elm.parentNode && newVnodeElm)

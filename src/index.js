@@ -6,6 +6,8 @@ const myvnode1 = h('ul', {}, [
     h('li', { key: 'a' }, 'a'),
     h('li', { key: 'b' }, 'b'),
     h('li', { key: 'c' }, 'c'),
+    h('li', { key: 'd' }, 'd'),
+    h('li', { key: 'e' }, 'e'),
 ])
 
 // 得到按钮和盒子
@@ -15,15 +17,14 @@ const btn = document.getElementById('btn')
 // 第一次上树
 patch(container, myvnode1)
 
-
 // 新的节点
 const myvnode2 = h('ul', {}, [
+    h('li', { key: 'qq' }, 'qq'),
     h('li', { key: 'a' }, 'a'),
     h('li', { key: 'b' }, 'b'),
-    h('li', { key: 'm' }, 'm'),
-    h('li', { key: 'n' }, 'n'),
     h('li', { key: 'c' }, 'c'),
-    h('li', { key: 'p' }, 'p'),
+    h('li', { key: 'd' }, 'd'),
+    h('li', { key: 'e' }, 'e'),
     h('li', { key: 'q' }, 'q'),
 ]
 )

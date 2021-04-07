@@ -1,7 +1,7 @@
 // 真正创建节点, 将vnode创建为dom, 是孤儿节点 不进行插入
 export default function createElement(vnode) {
     // 把虚拟节点插入到pivot前
-    console.log('目的是把虚拟节点', vnode, '真正变为dom');
+    // console.log('目的是把虚拟节点', vnode, '真正变为dom');
     // 创建一个dom节点, 这个节点目前还是一个孤儿节点
     let domNode = document.createElement(vnode.sel)
     // 判断有子节点还是有文本
